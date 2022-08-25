@@ -8,25 +8,95 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="nav-bar">
-      <nav>
-        <div></div>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">News</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">About</a></li>
-        </ul>
-      </nav>
-    </div>
-    <img class="my-photo" src="./assets/IMG_0084.jpg" alt="my photo" />
+    <nav class="nav-bar">
+      <div></div>
+      <ul>
+        <li><a href="#About-Me">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact-Me">Contact Information</a></li>
+        <li><a href="#Resume">Resume</a></li>
+      </ul>
+    </nav>
 
-    <h1>MY PERSONAL PORTFOLIO</h1>
-    <section class="bio">
-      <p>
-        Hi, I'm Mohammad Memar. I just started my journey as a full stack web
-        developer
-      </p>
-    </section>
+    <div class="about-me">
+      <section>
+        <img class="my-photo" src="./assets/IMG_0084.jpg" alt="my photo" />
+      </section>
+
+      <section class="detail" id="About-Me">
+        <h3>I'm Mohammad Memar</h3>
+        <p>
+          This is my official portfolio website to shoes all details and work
+          experience web developments.A Full Stack Web Developer is a skilled
+          computer programmer who handles both front and back end coding. At the
+          front end, the developer will use a combination of CSS, HTML, and
+          JavaScript for building everything that a user sees or interacts with
+          on a website, and on the back-end, these web developers will develop
+          server, application, and databases which frame the website
+          foundational structure.
+        </p>
+        <a href="#" id="Resume">DOWNLOAD CV </a>
+      </section>
+    </div>
+
+    <div id="projects" class="projects-container">
+      <h1>Projects</h1>
+      <div class="container-first-project">
+        <a href="">
+          <div class="project-first">
+            <span class="main-project-title"
+              >World Cup <br />
+              HTML/CSS/JavaScript
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <div class="projects">
+        <div>
+          <a href="">
+            <div class="project-1">
+              <span class="title-project"
+                >GTR Desiner <br />
+                this is a HTML project.
+              </span>
+            </div>
+          </a>
+          <a href="">
+            <div class="project-2">
+              <span class="title-project2"
+                >Vacation Time<br />CSS Practice</span
+              >
+            </div>
+          </a>
+        </div>
+
+        <div>
+          <a href="">
+            <div class="project-3">
+              <span class="title-project3"
+                >Movie Night<br />React/JavaScript</span
+              >
+            </div>
+          </a>
+          <a href="">
+            <div class="project-4">
+              <span class="title-project4">Coffee Time<br />Node</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer class="contact-info" id="contact-Me">
+      <ul>
+        <li><b>Contact Me</b></li>
+        <li>
+          <a href="mailto:Moreza.Memar@gmail.com"
+            >Email: Moreza.Memar@gmail.com
+          </a>
+        </li>
+        <li><a href="tel:8328719649">Phone number: 832-972-9629</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
