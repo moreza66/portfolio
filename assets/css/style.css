@@ -1,4 +1,5 @@
 * {
+    
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -21,13 +22,15 @@
 }
 .about-me{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-
     margin-top: 75px;
     margin-bottom: 75px;
 }
 .contact-Me{
+    display: flex;
+    flex-wrap: wrap;
     display: flex;
     width: 100%;
     height: 20px;
@@ -42,20 +45,20 @@
     position: relative;
     width: 100%;
     height: 25px;
-    
 }
 
-nav{
+nav {
     display: flex;
     flex-direction: row;
-    width: 84%;
     margin: auto;
     padding: 20px 0;
     align-items: flex-end;
     justify-content: space-between;
     background-color: rgb(177, 192, 218); ;
+    flex-wrap: wrap;
 }
 nav ul li{
+    display: flex;
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
@@ -88,6 +91,7 @@ nav ul li a:hover{
     border-radius: 5px;
 }
 
+
 .projects-container h1 {
     text-align: center;
     margin-bottom: 40px;
@@ -119,7 +123,6 @@ nav ul li a:hover{
     gap: 2rem;
     justify-content: center;
     padding: 10px;
-
 }
 
 .projects a {
@@ -150,8 +153,6 @@ margin-bottom: 19px;
     border-radius: 10px;
     width: 300px;
     height: 300px;
-
-    
 }
 .title-project2{
     background-color: rgb(75, 156, 196);
@@ -193,7 +194,6 @@ margin-bottom: 19px;
 
 }
 .contact-info{
-    position: relative;
     width: 100%;
     height: 25px;
 
@@ -202,7 +202,6 @@ margin-bottom: 19px;
 footer{
     display: flex;
     flex-direction: row;
-    width: 84%;
     margin: auto;
     padding: 20px 0;
     justify-content: space-between;
@@ -211,7 +210,44 @@ footer{
 }
 
 footer ul li{
+    flex-wrap: wrap;
+
     display: inline-block;
     list-style: none;
     margin: 0 20px;
 }
+
+
+/* RESPONSIVE PAGE */
+
+@media screen and (max-width: 450px) {
+    .nav-bar {
+        flex-wrap: wrap;
+    }
+
+    nav ul li{
+        flex-wrap: wrap;
+        margin: 0 5px;
+    }
+
+    .detail{
+        width: 100%;
+        height: 350px;
+     }
+    .container-first-project{
+        flex-wrap: wrap;
+    }
+    .projects{
+        flex-wrap: wrap;
+    }
+
+    footer{
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 40px 46px;
+    }
+    
+    footer ul li{
+        flex-wrap: wrap;
+    }
+  }
