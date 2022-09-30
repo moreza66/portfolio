@@ -131,7 +131,7 @@ nav ul li a:hover{
 
 .project-1{
 display: flex;
-background-image: url(../erik-mclean-eQ7v8A49oVs-unsplash.jpg);
+background-image: url(../project-1.jpg);
 background-size: cover;
 border-radius: 10px;
 width: 300px;
@@ -141,8 +141,8 @@ margin-bottom: 19px;
 
 .title-project{
     background-color: rgb(75, 156, 196);
-    margin-top: 250px;
-    margin-left: 20px;
+    margin-top: 230px;
+    margin-right: 57px;
     padding: 5px;
 }
 
@@ -199,6 +199,11 @@ margin-bottom: 19px;
 
 }
 
+.github-link{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
 footer{
     display: flex;
     flex-direction: row;
@@ -216,6 +221,7 @@ footer ul li{
     list-style: none;
     margin: 0 20px;
 }
+
 
 
 /* RESPONSIVE PAGE */
